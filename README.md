@@ -4,6 +4,8 @@
 
 **该模组需要在客户端和主机上都安装才能正常运行。**
 
+**与我的另一个Mod[ShareChest](https://thunderstore.io/package/Muskmelovon/ShareChest/) [*src*](https://github.com/THORNyX/ShareChest/)冲突！不能同时安装两个Mod**
+
 ## 影响游戏平衡
 
 警告：游戏前期会显著增加队伍物品掉落数量，可能影响游戏平衡，但是关底BOSS会嘿嘿嘿(其实是BUG)。
@@ -30,7 +32,7 @@
 ## 兼容性
 
 - 依赖项：[BepInExPack](https://thunderstore.io/package/bbepis/BepInExPack/)和[R2API](https://thunderstore.io/package/tristanmcpherson/R2API/)
-- 兼容性未知，问题提交至 GitHub ：：https://github.com/THORNyX/Equilibrium/issues
+- 兼容性未知，问题提交至 GitHub ：https://github.com/THORNyX/Equilibrium/issues
 
 ## 安装方法
 
@@ -47,11 +49,14 @@ Copy the `Equilibrium`  folder to `Risk of Rain 2/BepInEx/plugins`
 - 小黑盒ID：19245752
 - 哔哩哔哩：https://space.bilibili.com/54236953
 
+## 鸣谢/see also
+
+[InstancedLoot continuation](https://thunderstore.io/package/Nicebowl/InstancedLoot_continuation/) <sup>[*src*](https://github.com/Frenqy/InstancedLoot_continuation)</sup> by [Nicebowl](https://thunderstore.io/package/Nicebowl/)
+
 ## 更新日志
 
 - 1.0.0: NULL。
 - 2.0.0: 正式发布。
+- 2.0.1: 修改README.md。
+- 2.0.2: 修改README.md。
 
-## 鸣谢/see also
-
-[InstancedLoot continuation](https://thunderstore.io/package/Nicebowl/InstancedLoot_continuation/) <sup>[*src*](https://github.com/Wet-Boys/LookingGlass)</sup> by [Nicebowl](https://thunderstore.io/package/Nicebowl/)
