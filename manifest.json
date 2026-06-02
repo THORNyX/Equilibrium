@@ -1,9 +1,9 @@
 {
   "name": "Equilibrium",
-  "version_number": "2.0.3",
+  "version_number": "2.0.4",
   "website_url": "https://github.com/THORNyX/Equilibrium/",
   "displayName": "Equilibrium",
-  "description": "让每个玩家都拥有宝箱的《雨中冒险2》模组。在神器界面启用均衡神器（Artifact of Equilibrium）即可生效。A mod for Risk of Rain 2, which grants each player access to a chest, becomes effective upon enabling the 'Artifact of Equilibrium' within the Lobby.",
+  "description": "为每名玩家创建独立箱子和独立拾取，彻底告别抢装备，让联机体验更轻松。大厅启用均衡神器生效。Creates separate chests and pickups for each player, eliminating loot stealing and making co-op more enjoyable.becomes effective upon enabling the 'Artifact of Equilibrium' within the Lobby.",
   "dependencies": [
     "bbepis-BepInExPack-5.4.2113",
     "tristanmcpherson-R2API-5.0.5",

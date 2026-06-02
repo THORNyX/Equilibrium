@@ -1,6 +1,6 @@
 # Equilibrium
 
-让每个玩家都能拥有宝箱的《雨中冒险2》模组。 在神器界面启用 **均衡神器（Artifact of Equilibrium）** 即可生效。
+为每名玩家创建独立箱子和独立拾取，彻底告别抢装备，让联机体验更轻松。在神器界面启用均衡神器（Artifact of Equilibrium）即可生效。Creates separate chests and pickups for each player, eliminating loot stealing and making co-op more enjoyable.Share-Fight-Shuang becomes effective upon enabling the 'Artifact of Equilibrium' within the Lobby.
 
 ## 使用说明
 
@@ -44,7 +44,7 @@
 | `Chests`      | `InstanceBoth` | Default mode for all chests. InstanceObject = each player gets a copy, items free-for-all. InstanceBoth = each player gets a copy, items owner-only.<br />所有宝箱的默认模式。InstanceObject模式：任何玩家都可以拾取；InstanceBoth模式：仅自己可拾取<br/>## 以下是宝箱对应名称：<br/>## - Chest1: 普通宝箱<br/>## - Chest2: 大宝箱<br/>## - GoldChest: 传奇宝箱<br/>## - Chest1StealthedVariant: 隐藏宝箱<br/>## - CategoryChestDamage: 伤害箱<br/>## - CategoryChestHealing: 治疗箱<br/>## - CategoryChestUtility: 辅助箱<br/>## - CategoryChest2Damage: 大伤害箱<br/>## - CategoryChest2Healing: 大治疗箱<br/>## - CategoryChest2Utility: 大辅助箱<br/>## - EquipmentBarrel: 装备箱<br/>## - LunarChest: 月球舱<br/>## - VoidChest: 虚空摇篮<br/>## - Lockbox: 生锈锁箱<br/>## - ScavBackpack: 拾荒者背包 |
 | `Shops`       | `InstanceBoth` | Default mode for multi shops.<br />三选一商店的默认模式<br/>## 以下是三选一商店对应名称：<br/>## - TripleShop: 三选一商店<br/>## - TripleShopLarge: 大三选一商店？<br/>## - TripleShopEquipment: 装备三选一商店<br/>## - FreeChestMultiShop: 坠毁的多功能商店maybe┑(￣Д ￣)┍ |
 | `Shrines`     | `InstanceBoth` | Default mode for shrines.<br/>## 神龛的默认模式<br/>## 以下是神龛对应名称：<br/>## - ShrineChance: 机遇神龛<br/>## - ShrineBlood: 鲜血神龛<br/>## - ShrineRestack: 塑形神龛maybe |
-| `Special`     | `InstanceBoth` | Default mode for sacrifice, boss drops, etc.<br/>## 牺牲、首领掉落物品等的处理方式的默认模式<br/>## 以下是牺牲、首领掉落物品对应名称：<br/>## - Sacrifice: 牺牲掉落<br/>## - HuntersTricorn: 米爹maybe<br/>## - TeleporterBoss: 传送器BOSS<br/>## - SuperRoboBallEncounter: 合金崇拜单体maybe<br/>## - BossGroup: idk┑(￣Д ￣)┍ |
+| `Special`     | `InstanceBoth` | Default mode for sacrifice, boss drops, etc.<br/>## 牺牲、首领掉落物品等的处理方式的默认模式<br/>## 以下是牺牲、首领掉落物品对应名称：<br/>## - Sacrifice: 牺牲掉落<br/>## - HuntersTricorn: 显赫的猎手三角帽触发的掉落<br/>## - TeleporterBoss: 传送器BOSS<br/>## - SuperRoboBallEncounter: 合金崇拜单体maybe<br/>## - BossGroup: idk┑(￣Д ￣)┍ |
 | `Void`        | `InstanceBoth` | Default mode for void objects.<br/>## 虚空物品的默认模式<br/>## 以下是虚空物品对应名称：<br/>## - VoidTriple: 虚空潜能<br/>## - LockboxVoid: 结壳宝箱 |
 
 ## 待办事项
@@ -56,21 +56,40 @@
 
 - 请将问题或建议提交至 GitHub 代码库[：https://github.com/THORNyX/Equilibrium/issues](https://github.com/THORNyX/Equilibrium/issues)
 - 小黑盒ID：19245752
-- 哔哩哔哩：https://space.bilibili.com/54236953视频介绍(没做)
+- 哔哩哔哩：视频介绍(但是没做)
 
 ## 鸣谢/see also
 
 [InstancedLoot continuation](https://thunderstore.io/package/Nicebowl/InstancedLoot_continuation/) <sup>[*src*](https://github.com/Frenqy/InstancedLoot_continuation)</sup> by [Nicebowl](https://thunderstore.io/package/Nicebowl/)
 
-## 更新日志
+<details>
+<summary>更新日志</summary>
 
-- v2.0.0: 正式发布。
-- v2.0.1: 修正了 `README.md` 文件中的文本格式问题
-- v2.0.2: 修正了 `README.md` 文件中的文本格式问题
-- v2.0.3
-  - 新增 控制台命令 equilibrium_reload_config，无需重启游戏即可热重载配置。
-  - 新增 控制台命令 playerlist，输入即可查看当前房间玩家列表。
-  - 新增 PlayerManager，实时追踪玩家加入、离开及场景切换。
-  - 新增 调试快捷键：F5 输出实时玩家列表信息，F6 强制刷新玩家数量。
-  - 修复 神器名称在所有语言下统一显示为 Artifact of Equilibrium - 均衡神器。
+v2.0.4
 
+- 修复 控制台命令 playerlist修改为eq_playerlist，输入即可查看当前房间玩家列表（自动区分 Host/Client）。
+- 修复 控制台命令 equilibrium_reload_config修改为eq_reloadconfig，输入即可无需重启游戏热重载配置。
+- 修复 eq_playerlist F5输出结果中的Host和Client标签
+- 更新 模组描述
+
+v2.0.3
+
+- 新增 控制台命令 equilibrium_reload_config，无需重启游戏即可热重载配置。
+- 新增 控制台命令 playerlist，输入即可查看当前房间玩家列表。
+- 新增 PlayerManager，实时追踪玩家加入、离开及场景切换。
+- 新增 调试快捷键：F5 输出实时玩家列表信息，F6 强制刷新玩家数量。
+- 修复 神器名称在所有语言下统一显示为 Artifact of Equilibrium - 均衡神器。
+
+v2.0.2
+
+- 修正了 `README.md` 文件中的文本格式问题
+
+v2.0.1
+
+- 修正了 `README.md` 文件中的文本格式问题
+
+v2.0.0
+
+- 正式发布
+
+</details>
