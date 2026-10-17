@@ -1,6 +1,6 @@
 {
   "name": "Equilibrium",
-  "version_number": "2.0.4",
+  "version_number": "2.1.0",
   "website_url": "https://github.com/THORNyX/Equilibrium/",
   "displayName": "Equilibrium",
   "description": "为每名玩家创建独立箱子和独立拾取，彻底告别抢装备，让联机体验更轻松。大厅启用均衡神器生效。Creates separate chests and pickups for each player, eliminating loot stealing and making co-op more enjoyable.becomes effective upon enabling the 'Artifact of Equilibrium' within the Lobby.",
